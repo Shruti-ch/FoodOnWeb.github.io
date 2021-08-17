@@ -1,0 +1,243 @@
+/*CSS RESET*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/*css variables*/
+:root{
+      --navbar-height:59px;
+     }
+
+/**************************Navigation bar*************************/
+
+#navbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-top: 15px;
+        align-content: space-around;
+        justify-content: flex-start;
+        align-items: flex-end;
+       }
+
+/*Navigation bar: List styling*/
+#navbar ul {
+            display: flex;
+           }
+
+#navbar::before {
+                 content: "" ;
+                 background-color: black;
+                 position: absolute;
+                 top: opx;
+                 left: 0px;
+                 height: 200%;
+                 width: 100%;
+                 z-index: -1;
+                 opacity: 0.4;
+                }
+
+#navbar ul li{
+              /*color:white;*/
+              list-style: none;
+              font-size: 1.3rem;
+             }
+
+#navbar ul li a{
+                color: rgb(255, 255, 255);
+                display: block;
+                padding: 3px 22px;
+                border-radius: 20px;
+                text-decoration: none;
+               }
+
+#navbar ul li a:hover{
+  color: rgb(255, 243, 235);
+  background-color: rgb(54, 51, 51);
+}
+
+
+/*Home Section*/
+
+#Home{
+display: flex;
+flex-direction: column;
+padding: 3px 200px;
+height: 578px;
+justify-content: center;
+align-items: center;
+}
+
+#Home::before{
+  content: "" ;
+  background:url('../plate.jpg') no-repeat center right/cover;
+  position: absolute;
+  top: opx;
+  left: 0px;
+  height: 585px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+
+
+
+
+
+/*Utility Classes*/
+
+#Home h1{
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+#Home p{
+ color: black;
+ text-align: center;
+ font-size: 1.5rem;
+ font-family: 'Hahmlet', serif;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Lato', sans-serif;
+}
+.h-secondary{
+  font-family: 'Lato', sans-serif;
+  font-size: 2.8rem;
+  padding: 12px;
+}
+
+.btn{
+padding: 6px 20px;
+border: 5px solid rgb(0, 0, 0);
+background-color: rgb(185, 59, 59);
+color: white;
+margin: 17px;
+font-size: 1.5rem;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.center{
+text-align: center;
+}
+
+
+
+
+/*Service Container*/
+#Services{
+          margin: 34px;
+          display: flex;
+
+}
+#Services .box{
+              border: 2px solid rgb(0, 0, 0);
+              padding: 34px;
+              margin: 3px 6px;
+              border-radius: 23px;
+              background-color: #cbc6df63;
+  
+}
+#Services .box img{
+                   height: 160px;
+                   margin: auto;
+                   display: block;
+                  }
+#Services .box p{
+  font-family: 'Lato', sans-serif;
+  
+}
+
+
+/*Client section*/
+ 
+#client-section{ 
+  position: relative;
+}
+
+#client-section::before{
+content: "";
+position: absolute;
+background: url('pck.jpg');
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.4;
+}
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item{
+  padding: 34px;
+}
+
+#clients img{
+  height: 80px;
+}
+
+
+
+/* Contact Section */
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('phone.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+} 
+
+#contact-box form{
+  width: 40%;
+}
+
+#contact-box label{
+ font-size: 1.3rem;
+ font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+
+
+
+
+
+
+
